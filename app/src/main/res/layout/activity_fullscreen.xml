@@ -7,11 +7,22 @@
     android:theme="@style/ThemeOverlay.AppRelogio.FullscreenContainer"
     tools:context=".FullscreenActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/ol"
-        android:textSize="80sp" />
+    <TextClock
+        android:id="@+id/clock_horas_minutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm"
+        android:format24Hour="hh:mm"
+        android:text="00:00"
+        android:textSize="100sp" />
+
+    <TextClock
+        android:id="@+id/clock_segundos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="ss"
+        android:format24Hour="ss"
+        android:text="00"
+        android:textSize="30sp" />
 
 </LinearLayout>
