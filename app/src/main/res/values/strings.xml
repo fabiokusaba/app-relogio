@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">Relogio</string>
     <string name="ol">Hello</string>
+    <string name="nivel_bateria">Nível bateria</string>
 </resources>
