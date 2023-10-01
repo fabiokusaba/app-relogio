@@ -52,5 +52,22 @@ class FullscreenActivity : AppCompatActivity() {
             }
             binding.checkNivelBateria.isChecked = isChecked
         }
+
+        binding.layoutMenu.animate().translationY(500F)
+
+        binding.imageViewPreferencias.setOnClickListener {
+            binding.layoutMenu.visibility = View.VISIBLE
+            binding.layoutMenu.animate().translationY(0F).setDuration(
+                resources.getInteger(android.R.integer.config_mediumAnimTime).toLong()
+            )
+
+        }
+
+        binding.imageViewFechar.setOnClickListener {
+            binding.layoutMenu.animate().translationY(binding.layoutMenu.measuredHeight.toFloat())
+                .setDuration(
+                    resources.getInteger(android.R.integer.config_mediumAnimTime).toLong()
+                )
+        }
     }
 }
